@@ -1,6 +1,7 @@
 name: build
 
 on:
+  workflow_dispatch:
   push:
   pull_request:
   workflow_run:
@@ -13,6 +14,7 @@ on:
       - docking
     types:
       - requested
+    
 
 jobs:
   Windows:
